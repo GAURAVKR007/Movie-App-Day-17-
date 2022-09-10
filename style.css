@@ -20,6 +20,27 @@ header {
     display: flex;
     justify-content: flex-end;
     background-color: var(--secondary-color);
+    position: relative;
+}
+
+.home {
+    position: absolute;
+    left:2%;
+    top: 25%;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-family: inherit;
+    border: 2px solid var(--primary-color);
+}
+
+.home:active{
+    transform: scale(0.95);
+}
+
+.home:hover{
+    background-color: rgba(247, 243, 243, 0.18);
 }
 
 .search {

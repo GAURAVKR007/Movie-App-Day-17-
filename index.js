@@ -4,6 +4,11 @@ const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=69ab380138
 const search = document.getElementById('search')
 const main = document.getElementById('main')
 const form = document.getElementById('form')
+const homebtn = document.querySelector('.home')
+
+homebtn.addEventListener('click',()=>{
+    window.location.reload();
+})
 
 // Get initial Movies
 
@@ -25,7 +30,7 @@ form.addEventListener('submit',(e)=>{
 
         search.value = ''
     }else{
-        window.location.reload()
+        window.location.reload();
     }
 })
 
